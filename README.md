@@ -59,17 +59,16 @@ Currently supported languages:
 
 ### CURL Example:
 
-Request: curl -v -X POST -F 'file=@voice.mp3' -F 'language=english' -F 'vtt=true' [https://asr.iitm.ac.in/asr/v2/decode](https://asr.iitm.ac.in/asr/v2/decode)
+Request: ```curl -v -X POST -F 'file=@voice.mp3' -F 'language=english' -F 'vtt=true' https://asr.iitm.ac.in/asr/v2/decode```
 
 Response: {"status":"success","time_taken":"4.61","transcript":"welcome to madras program thank you","vtt":"WEBVTT\n\n00:00:00.800 --> 00:00:04.600\nwelcome to madras\n\n00:00:04.900 --> 00:00:10.000\nprogram thank you"}
 
   
 
 ### Python Example:
-
+```
 import requests
 
-  
 
 files = {
 
@@ -84,7 +83,7 @@ files = {
 response = requests.post('https://asr.iitm.ac.in/asr/v2/decode', files=files)
 
 print(response.json())
-
+```
   
 
 ### Web Demo:
