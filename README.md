@@ -1,5 +1,5 @@
 # Speech Lab IITM Models and APIs
-## ASR v2 Documentation
+## ASR v2 API Documentation
 
 Our ASR API accepts the following three inputs in the request:
 
